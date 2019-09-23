@@ -166,19 +166,22 @@ def do_TokenUpdate(pl):
         )
     )
     out = """
-# these will be filled in by the server when a device enrolls
-my_PushMagic = '%s'
-my_DeviceToken = %s
-my_UnlockToken = %s
-""" % (my_PushMagic, repr(my_DeviceToken), repr(my_UnlockToken))
+    
+    # these will be filled in by the server when a device enrolls
+    my_PushMagic = '%s'
+    my_DeviceToken = %s
+    my_UnlockToken = %s
+    """ % (my_PushMagic, repr(my_DeviceToken), repr(my_UnlockToken))
     print(out)
     fd = open('creds.py', 'w')
     fd.write(out)
     fd.close()
-    print "Device enrolled!\n"
+    print("Device enrolled!\n")
     return dict()
+
 mdm_commands = setup_commands()
 current_command = mdm_commands['DeviceLock']
+
 if __name__ == "__main__":
     app = web.application(urls, globals())
     app.run()
