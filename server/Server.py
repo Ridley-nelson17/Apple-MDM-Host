@@ -8,40 +8,6 @@ from datetime import datetime
 # needed to handle verification of signed messages from devices
 from M2Crypto import SMIME, X509, BIO
 
-#
-# Simple, basic, bare-bones example test server
-# Implements Apple's Mobile Device Management (MDM) protocol
-# Compatible with iOS 4.x devices
-# 
-#
-# David Schuetz, Senior Consultant, Intrepidus Group
-#
-# Copyright 2011, Intrepidus Group
-# http://intrepidusgroup.com
-
-# Reuse permitted under terms of BSD License (see LICENSE file).
-# No warranties, expressed or implied.
-# This is experimental software, for research only. Use at your own risk.
-
-#
-# Revision History:
-#  
-# * August 2011    - initial release, Black Hat USA
-# * January 2012   - minor tweaks, including favicon, useful README, and 
-#                    scripts to create certs, log file, etc.
-# * January 2012   - Added support for some iOS 5 functions. ShmooCon 8.
-# * February 2012  - Can now verify signed messages from devices
-#                  - Tweaks to CherryPy startup to avoid errors on console  
-# * January 2014   - Support for multiple enrollments
-#                  - Supports reporting problems
-# * April 2014     - Support for new front end
-#                  - Tweaks and bug fixes
-# * May 2014       - New device class
-#                  - Rework server to use device class
-#                  - Fixes a number of problems with using multiple devices
-#                  - Support for new device-based front end
-
-
 # Global variable setup
 LOGFILE = 'xactn.log'
 
