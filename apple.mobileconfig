@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE plist PUBLIC "-//Apple/DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadDisplayName</key>
+	<string>liOS Configurations</string>
+	<key>PayloadDescription</key>
+	<string>Configures the device with liOS LDAP directories and Wifi profiles.</string>
+	<key>PayloadOrganization</key>
+	<string>LanyxSoft liOS</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadIdentifier</key>
+	<string>com.lanyxsoft.mobileconfig.info.9295ab42-920a-481c-b745-96566e954378</string>
+	<key>PayloadUUID</key>
+	<string>954e6e8b-5489-484c-9b1d-0c9b7bf18e32</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadScope</key>
+	<string>System</string>
+
+	<key>PayloadContent</key>
+	<array>
+		<!-- LDAP Settings -->
+		<!-- <dict>
+			<key>PayloadDisplayName</key>
+			<string>LDAP Settings</string>
+			<key>PayloadType</key>
+			<string>com.apple.ldap.account</string>
+			<key>PayloadIdentifier</key>
+			<string>com.lanyxsoft.mobileconfig.ldap.account.88d26695-7868-40fb-a032-29561361f8f5</string>
+			<key>PayloadUUID</key>
+			<string>6df7a612-ce0a-4b4b-bce2-7b844e3c9df0</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+
+			<key>LDAPAccountDescription</key>
+			<string>Company Contacts</string>
+			<key>LDAPAccountHostName</key>
+			<string>account.ldap.mobileconfig.lios.lanyxsoft.com</string>
+			<key>LDAPAccountUseSSL</key>
+			<false/>
+			<key>LDAPAccountUserName</key>
+			<string>uid=username,dc=example,dc=com</string>
+			<key>LDAPSearchSettings</key>
+			<array>
+				<dict>
+					<key>LDAPSearchSettingDescription</key>
+					<string>Company Contacts</string>
+					<key>LDAPSearchSettingSearchBase</key>
+					<string></string>
+					<key>LDAPSearchSettingScope</key>
+					<string>LDAPSearchSettingScopeSubtree</string>
+				</dict>
+				<dict>
+					<key>LDAPSearchSettingDescription</key>
+					<string>Sales Departments</string>
+					<key>LDAPSearchSettingSearchBase</key>
+					<string>ou=Sales,dc=example,dc=com</string>
+					<key>LDAPSearchSettingScope</key>
+					<string>LDAPSearchSettingScopeSubtree</string>
+				</dict>
+			</array>
+		</dict> -->
+
+		<!-- Email Settings -->
+		<!-- <dict>
+			<key>PayloadDisplayName</key>
+			<string>Email Settings</string>
+			<key>PayloadType</key>
+			<string>com.apple.mail.managed</string>
+			<key>PayloadIdentifier</key>
+			<string>com.lanyxsoft.mobileconfig.profiles.email.028f733f-2ed1-403a-8a37-dc31e218a2bf</string>
+			<key>PayloadUUID</key>
+			<string>362e5c11-a332-4dfb-b18b-f6f0aac032fd</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+
+			<key>EmailAccountDescription</key>
+			<string>Company E-mail</string>
+			<key>EmailAccountName</key>
+			<string>Full Name</string>
+			<key>EmailAccountType</key>
+			<string>EmailTypeIMAP</string>
+			<key>EmailAddress</key>
+			<string>blank@example.com</string>
+			<key>IncomingMailServerAuthentication</key>
+			<string>EmailAuthPassword</string>
+			<key>IncomingMailServerHostName</key>
+			<string>imap.example.com</string>
+			<key>IncomingMailServerUseSSL</key>
+			<true />
+			<key>IncomingMailServerUsername</key>
+			<string>username@es2eng.com</string>
+			<key>OutgoingPasswordSameAsIncomingPassword</key>
+			<true />
+			<key>OutgoingMailServerAuthentication</key>
+			<string>EmailAuthPassword</string>
+			<key>OutgoingMailServerHostName</key>
+			<string>smtp.example.com</string>
+			<key>OutgoingMailServerUseSSL</key>
+			<true />
+			<key>OutgoingMailServerUsername</key>
+			<string>username@example.com</string>
+		</dict> -->
+
+		<!-- Login Window Text -->
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Login Window Config</string>
+			<key>PayloadDescription</key>
+			<string>Configures login window settings</string>
+			<key>PayloadOrganization</key>
+			<string>LanyxSoft liOS</string>
+			<key>PayloadType</key>
+			<string>com.apple.loginwindow</string>
+			<key>PayloadIdentifier</key>
+			<string>com.lanyxsoft.mobileconfig.system.login.window.c572c6a3-ac50-4f9d-bc1b-e5ef3790df79</string>
+			<key>PayloadUUID</key>
+			<string>FD61E78F-B806-4ADD-B328-F0F4580F3809</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+
+			<key>LoginwindowText</key>
+			<string>If you don't know... the screen is locked</string>
+		</dict>
+
+		<!-- Software Update Settings -->
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>macOS Software Update Settings</string>
+			<key>PayloadDescription</key>
+			<string>macOS Automatic Software Update Settings</string>
+			<key>PayloadOrganization</key>
+			<string>Contoso Inc</string>
+			<key>PayloadType</key>
+			<string>com.apple.SoftwareUpdate</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.SoftwareUpdate.BD836593-7D61-4796-A26B-F9564AB2F54D</string>
+			<key>PayloadUUID</key>
+			<string>858CD772-0846-4821-BCED-D5229F24FC37</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadEnabled</key>
+			<true/>
+
+			<key>AutomaticCheckEnabled</key>
+			<true/>
+			<key>AutomaticDownload</key>
+			<true/>
+			<key>AutomaticallyInstallMacOSUpdates</key>
+			<true/>
+			<key>ConfigDataInstall</key>
+			<true/>
+			<key>CriticalUpdateInstall</key>
+			<true/>
+			<key>EvaluateCriticalEvenIfUnchanged</key>
+			<true/>
+			<key>OneTimeForceScanEnabled</key>
+			<true/>
+		</dict>
+
+		<!-- Restrictions -->
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Custom IOS and macOS Restrictions</string>
+			<key>PayloadDescription</key>
+			<string>Configures custom restrictions. Apply this on a dirt computer, and it should override the restrictions.</string>
+			<key>PayloadType</key>
+			<string>com.apple.applicationaccess.new</string>
+			<key>PayloadIdentifier</key>
+			<string>com.lanyxsoft.mobileconfig.profiles.restrictions.eab77630-6ae7-4e93-b462-6f2e642006b5</string>
+			<key>PayloadUUID</key>
+			<string>eb8f293e-303d-11ea-978f-2e728ce88125</string>
+			<key>PayloadVersion</key>
+			<integer>2</integer>
+
+			<key>allowLockScreenNotificationsView</key>
+			<false/>
+			<key>allowLockScreenTodayView</key>
+			<false/>
+			<key>allowScreenShot</key>
+			<true/>
+			<key>allowAutoUnlock</key>
+			<true/>
+
+			<key>allowAppRemoval</key>
+			<true/>
+			<key>forceEncryptedBackup</key>
+			<true/>
+			<key>forceITunesStorePasswordEntry</key>
+			<true/>
+			<key>forceLimitAdTracking</key>
+			<true/>
+			<key>allowEnterpriseAppTrust</key>
+			<true/>
+			<key>allowRemoteScreenObservation</key>
+			<false/>
+
+			<key>minLength</key>
+			<integer>5</integer>
+			<key>maxPINAgeInDays</key>
+			<integer>1</integer>
+			<key>safariAllowPopups</key>
+			<false/>
+		</dict>
+
+		<!-- Cellular -->
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Cellular Configs</string>
+			<key>PayloadDescription</key>
+			<string>Configures the device with the ability to connect to my thermoserver hotspot.</string>
+			<key>PayloadOrganization</key>
+			<string>LanyxSoft liOS</string>
+			<key>PayloadType</key>
+			<string>com.apple.cellular</string>
+			<key>PayloadIdentifier</key>
+			<string>com.lanyxsoft.mobileconfig.profiles.cellular.54b85fb2-648f-4cc4-abdf-0a0c812756b8</string>
+			<key>PayloadUUID</key>
+			<string>1e390edc-303d-11ea-978f-2e728ce88125</string>
+
+			<key>Name</key>
+			<string>thermoserver</string>
+			<key>Password</key>
+			<string>CryptoBypass???</string>
+			<key>AuthenticationType</key>
+			<string>WPA2_PSK</string>
+		</dict>
+
+		<!-- Wifi -->
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>CenturyLink6945</string>
+			<key>PayloadType</key>
+			<string>com.apple.wifi.managed</string>
+			<key>PayloadIdentifier</key>
+			<string>com.lanyxsoft.mobileconfig.profiles.wifi.8ef533ce-8db1-466f-8f29-a620622f90cf</string>
+			<key>PayloadUUID</key>
+			<string>7016cb4a-303d-11ea-978f-2e728ce88125</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+
+			<key>SSID_STR</key>
+			<string>CenturyLink6945</string>
+			<key>Password</key>
+			<string>bubba042</string>
+			<key>HIDDEN_NETWORK</key>
+			<false/>
+			<key>AutoJoin</key>
+			<true/>
+			<key>ProxyType</key>
+			<string>Auto</string>
+			<key>EncryptionType</key>
+			<string>WPA2_PSK</string>
+			<key>SetupModes</key>
+			<array/>
+			<key>Interface</key>
+			<string>BuiltInWireless</string>
+			<key>PayloadEnabled</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>ISD625</string>
+			<key>PayloadType</key>
+			<string>com.apple.wifi.managed</string>
+			<key>PayloadIdentifier</key>
+			<string>com.lanyxsoft.mobileconfig.profiles.wifi.c8bdf95d-c72d-49f8-be8c-3b16e439d47a</string>
+			<key>PayloadUUID</key>
+			<string>812e2cd4-303d-11ea-978f-2e728ce88125</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+
+			<key>SSID_STR</key>
+			<string>ISD625</string>
+			<key>Password</key>
+			<string></string>
+			<key>HIDDEN_NETWORK</key>
+			<false/>
+			<key>AutoJoin</key>
+			<true/>
+			<key>ProxyType</key>
+			<string>Auto</string>
+			<key>EncryptionType</key>
+			<string>None</string>
+			<key>SetupModes</key>
+			<string>System</string>
+			<key>Interface</key>
+			<string>BuiltInWireless</string>
+			<key>PayloadEnabled</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>CenturyLink6945_5G</string>
+			<key>PayloadType</key>
+			<string>com.apple.wifi.managed</string>
+			<key>PayloadIdentifier</key>
+			<string>com.lanyxsoft.mobileconfig.profiles.wifi.67b35921-70ef-4473-aec8-f0bec70a9147</string>
+			<key>PayloadUUID</key>
+			<string>2872c4d0-1e56-0131-c329-000c2944c108</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+
+			<key>SSID_STR</key>
+			<string>CenturyLink6945_5G</string>
+			<key>Password</key>
+			<string>bubba042</string>
+			<key>HIDDEN_NETWORK</key>
+			<false/>
+			<key>AutoJoin</key>
+			<true/>
+			<key>ProxyType</key>
+			<string>Auto</string>
+			<key>EncryptionType</key>
+			<string>WPA2_PSK</string>
+			<key>SetupModes</key>
+			<string>System</string>
+			<key>Interface</key>
+			<string>BuiltInWireless</string>
+			<key>PayloadEnabled</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>MSAB</string>
+			<key>PayloadType</key>
+			<string>com.apple.wifi.managed</string>
+			<key>PayloadIdentifier</key>
+			<string>com.lanyxsoft.mobileconfig.profiles.wifi.67b35921-70ef-4473-aec8-f0bec70a9147</string>
+			<key>PayloadUUID</key>
+			<string>55646744-304c-11ea-978f-2e728ce88125</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+
+			<key>SSID_STR</key>
+			<string>MSAB</string>
+			<key>Password</key>
+			<string>Ms@b2017</string>
+			<key>HIDDEN_NETWORK</key>
+			<false/>
+			<key>AutoJoin</key>
+			<true/>
+			<key>ProxyType</key>
+			<string>Auto</string>
+			<key>EncryptionType</key>
+			<string>WPA2_PSK</string>
+			<key>SetupModes</key>
+			<string>System</string>
+			<key>Interface</key>
+			<string>BuiltInWireless</string>
+			<key>PayloadEnabled</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>WoodburyNelsons</string>
+			<key>PayloadType</key>
+			<string>com.apple.wifi.managed</string>
+			<key>PayloadIdentifier</key>
+			<string>com.lanyxsoft.mobileconfig.profiles.wifi.67b35921-70ef-4473-aec8-f0bec70a9147</string>
+			<key>PayloadUUID</key>
+			<string>55646604-304c-11ea-978f-2e728ce88125</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+
+			<key>SSID_STR</key>
+			<string>WoodburyNelsons</string>
+			<key>Password</key>
+			<string>Kramer77</string>
+			<key>HIDDEN_NETWORK</key>
+			<false/>
+			<key>AutoJoin</key>
+			<true/>
+			<key>ProxyType</key>
+			<string>Auto</string>
+			<key>EncryptionType</key>
+			<string>WPA2</string>
+			<key>SetupModes</key>
+			<string>System</string>
+			<key>Interface</key>
+			<string>BuiltInWireless</string>
+			<key>PayloadEnabled</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>techlab</string>
+			<key>PayloadType</key>
+			<string>com.apple.wifi.managed</string>
+			<key>PayloadIdentifier</key>
+			<string>com.lanyxsoft.mobileconfig.profiles.wifi.556464b0-304c-11ea-978f-2e728ce88125</string>
+			<key>PayloadUUID</key>
+			<string>55646b40-304c-11ea-978f-2e728ce88125</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+
+			<key>SSID_STR</key>
+			<string>techlab</string>
+			<key>Password</key>
+			<string>nvda!jaws</string>
+			<key>HIDDEN_NETWORK</key>
+			<false/>
+			<key>AutoJoin</key>
+			<true/>
+			<key>ProxyType</key>
+			<string>Auto</string>
+			<key>EncryptionType</key>
+			<string>WPA2</string>
+			<key>SetupModes</key>
+			<string>System</string>
+			<key>Interface</key>
+			<string>BuiltInWireless</string>
+			<key>PayloadEnabled</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>UW-Superior</string>
+			<key>PayloadType</key>
+			<string>com.apple.wifi.managed</string>
+			<key>PayloadIdentifier</key>
+			<string>com.lanyxsoft.mobileconfig.profiles.wifi.55646cc6-304c-11ea-978f-2e728ce88125</string>
+			<key>PayloadUUID</key>
+			<string>55646e10-304c-11ea-978f-2e728ce88125</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+
+			<key>SSID_STR</key>
+			<string>UW-Superior</string>
+			<key>Password</key>
+			<string></string>
+			<key>HIDDEN_NETWORK</key>
+			<false/>
+			<key>AutoJoin</key>
+			<true/>
+			<key>ProxyType</key>
+			<string>Auto</string>
+			<key>EncryptionType</key>
+			<string>None</string>
+			<key>SetupModes</key>
+			<string>System</string>
+			<key>Interface</key>
+			<string>BuiltInWireless</string>
+			<key>CaptiveBypass</key>
+			<true/>
+			<key>PayloadEnabled</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>linksys</string>
+			<key>PayloadType</key>
+			<string>com.apple.wifi.managed</string>
+			<key>PayloadIdentifier</key>
+			<string>com.lanyxsoft.mobileconfig.profiles.wifi.556471b2-304c-11ea-978f-2e728ce88125</string>
+			<key>PayloadUUID</key>
+			<string>55647c98-304c-11ea-978f-2e728ce88125</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+
+			<key>SSID_STR</key>
+			<string>linksys</string>
+			<key>Password</key>
+			<string></string>
+			<key>HIDDEN_NETWORK</key>
+			<false/>
+			<key>AutoJoin</key>
+			<true/>
+			<key>ProxyType</key>
+			<string>Auto</string>
+			<key>EncryptionType</key>
+			<string>None</string>
+			<key>SetupModes</key>
+			<string>System</string>
+			<key>Interface</key>
+			<string>BuiltInWireless</string>
+			<key>CaptiveBypass</key>
+			<true/>
+			<key>PayloadEnabled</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>BWSpiritMtn</string>
+			<key>PayloadType</key>
+			<string>com.apple.wifi.managed</string>
+			<key>PayloadIdentifier</key>
+			<string>com.lanyxsoft.mobileconfig.profiles.wifi.55646230-304c-11ea-978f-2e728ce88125</string>
+			<key>PayloadUUID</key>
+			<string>79e648f9-1de8-4697-8368-11fc7e2ce6e1</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+
+			<key>SSID_STR</key>
+			<string>BWSpiritMtn</string>
+			<key>Password</key>
+			<string></string>
+			<key>HIDDEN_NETWORK</key>
+			<false/>
+			<key>AutoJoin</key>
+			<true/>
+			<key>ProxyType</key>
+			<string>Auto</string>
+			<key>EncryptionType</key>
+			<string>None</string>
+			<key>SetupModes</key>
+			<string>System</string>
+			<key>Interface</key>
+			<string>BuiltInWireless</string>
+			<key>CaptiveBypass</key>
+			<true/>
+			<key>PayloadEnabled</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>
